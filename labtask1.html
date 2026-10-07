@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        form {
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #eeeeee;
+        }
+
+        h2, h4 {
+            color: red;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 250px;
+            height: 20px;
+        }
+
+        textarea {
+            height: 25px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            height: auto;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 5px 15px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <p style="font-size: 12px; color: #555; margin-bottom: 5px;">
+            <span style="color:red">* </span> - Denotes Required Information
+        </p>
+
+        <h6 style="font-size: 14px; color: #555; margin-top: 5px;">
+            <span style="color:black">  >1 Donation </span>   >2 Confirmation   >3Thank You!
+        </h6>
+
+        <h2>
+            Donor Information
+        </h2>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+
+        <label for="Lastname">Last Name:</label>
+        <input type="text" id="Lastname" name="Lastname" required><br>
+
+        <label for="Company">Company:</label>
+        <input type="text" id="Company" name="Company" required><br>
+
+        <label for="address1">Address 1:</label>
+        <textarea id="address1" name="address1" required></textarea><br>
+
+        <label for="address2">Address 2:</label>
+        <textarea id="address2" name="address2" required></textarea><br>
+
+        <label for="city">City:</label>
+        <textarea id="city" name="city" required></textarea><br>
+
+        <label for="State">State:</label>
+        <select id="State" name="State" required>
+            <option value="">Select a State</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Sylhet">Sylhet</option>
+        </select><br>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="tel" id="zipcode" name="zipcode" required><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a Country</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">india</option>
+            <option value="China">China</option>
+        </select><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="fax">Fax:</label>
+        <input type="tel" id="fax" name="fax" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+
+        <label>Donation Amount:</label>
+        <p>(Check a button or type in your amount)</p>
+       
+
+        <input type="radio" id="none" name="donation amount" value="none">
+        <label for="none">none</label>
+
+        <input type="radio" id="$50" name=" donation amount" value="$50">
+        <label for="$50">$50</label>
+
+        <input type="radio" id="$75" name="donation amount" value="$75">
+        <label for="$75">$75</label>
+
+        <input type="radio" id="$100" name="donation amount" value="$100">
+        <label for="$100">$100</label>
+
+        <input type="radio" id="$250" name="donation amount" value="$250">
+        <label for="$250">$250</label>
+
+        <input type="radio" id="other" name="donation amount" value="other">
+        <label for="other">other</label><br>
+
+        <label for="other amount">Other Amount $</label>
+        <input type="text" id="other amount" name="other amount"><br>
+
+        <label for="recurring donation">Recurring Donation:</label>
+        <p>(Check if yes)</p>
+        <input type="checkbox" id="recurring donation" name="recurring donation" required>
+
+        <label for="terms">I am interested in giving on a regular basis</label><br>
+
+        <label for="monthcard">Monthly Credit Card $</label>
+<input type="text" id="monthcard" name="monthcard">
+
+<label for="for">For:</label>
+<input type="text" id="for" name="for">
+
+<label for="months">Months</label>
+        
+
+
+
+        <h4>
+            honorarium and memorial donation information
+        </h4>
+
+        <label>i would like to make this donation:</label>
+
+        <input type="radio" id="tohonor" name="tohonor" value="tohonor">
+        <label for="tohonor">To Honor</label>
+        
+
+        <input type="radio" id="memory" name="memory" value="memory">
+        <label for="memory">In memory of</label><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="acknowledge">Acknowledge Donation to:</label>
+        <input type="text" id="acknowledge" name="acknowledge"><br>
+
+        <label for="address">Address :</label>
+        <textarea id="address" name="address"></textarea><br>
+
+        <label for="city">City:</label>
+        <textarea id="city" name="city"></textarea><br>
+
+        <label for="State">State:</label>
+        <select id="State" name="State">
+            <option value="">Select a State</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Sylhet">Sylhet</option>
+        </select><br>
+
+        <label for="zip">Zip:</label>
+        <input type="tel" id="zip" name="zip"><br>
+
+
+        <h4>
+            Additional Information
+        </h4>
+          
+        <p>Please enter your name,company or organization
+            as you would like to appear in our publications:
+        </p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ><br>
+
+        <input type="checkbox" id="anonymous" name="anonymous" required>
+        <label for="anonymous">I would like my gift to remain annonymous</label><br>
+
+        <input type="checkbox" id="matching" name="matching" required>
+        <label for="matching">My employer offers a matching gift program.I will mail the matching gift form</label><br>
+
+        <input type="checkbox" id="thankyou" name="thankyou" required>
+        <label for="thankyou">Please save the cost of acknowladgeing this gift by not mailing a thank you latter</label><br>
+
+        <label for="comments">Comments:</label><br>
+        <p>(Please type any questions or feedback here)</p>
+        <textarea id="comments" name="comments"></textarea><br>
+
+        <label for="contact">How may we contact you?</label><br>
+
+        <input type="checkbox" id="email" name="email">
+        <label for="email">E-mail</label><br>
+
+        <input type="checkbox" id="postalmaik" name="postalmail">
+        <label for="postalmail">Postal Mail</label><br>
+
+        <input type="checkbox" id="telephone" name="telephone">
+        <label for="telephone">Telephone</label><br>
+
+        <input type="checkbox" id="fax" name="fax" >
+        <label for="fax">Fax</label><br>
+
+        <p>
+    <span style="color:gray">
+        I would like to recieve newsletters and information
+        about special events by:
+    </span>
+</p>
+
+<input type="checkbox" id="email" name="email">
+        <label for="email">E-mail</label><br>
+
+        <input type="checkbox" id="postalmaik" name="postalmail">
+        <label for="postalmail">Postal Mail</label><br>
+
+   <p>
+    <span style="color:gray">
+        I would like iformation about volunteering with the
+    </span>
+</p>
+
+
+        <input type="reset" value="reset">
+
+        <input type="submit" value="continue">
+
+        <p>Donate online with confidence.You are on a secure server.</p><p>If you have any problems or questions,please contact <span style="color:gray">support.</span></p>
+        
+
+    </form>
+
+</body>
+
+</html>
